@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lovephoto.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ロゴとナビゲーション -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container">
+              <a href="index.html" class="navbar-brand">Lovephoto</a>
+              <button class="navbar-toggler" data-bs-toggler="collapse" data-bs-targer="#navbar1">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbar1" class="collapse navbar-collapse">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a href="index.html" class="nav-link">ホーム</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#service" class="nav-link">サービス</a>
+                    </li>
+                      <li class="nav-item">
+                        <a href="#about" class="nav-link">私について</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">コンタクト</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <!-- 写真 slider -->
+      <section id="slider">
+          <div class="carousel slide" data-bs-ride="carousel" id="myslider">
+              <ol class="carousel-indicators">
+                  <button data-bs-target="#myslider" data-bs-slide-to="0" class="active"></button>
+                  <button data-bs-target="#myslider" data-bs-slide-to="1" class="active"></button>
+                  <button data-bs-target="#myslider" data-bs-slide-to="2" class="active"></button>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item carousel-image-1">
+                      <div class="container">
+                          <div class="carousel-caption d-none d-sm-block">
+                              <!-- <h1 class="display-3">北海道</h1>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item carousel-image-2 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <!-- <h1 class="display-3">茨城県</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item carousel-image-3 ">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <!-- <h1 class="display-3">東京タワー</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                        </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" data-bs-target="#myslider" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" data-bs-target="#myslider" data-bs-slide="prev">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+          </div>
+      </section>
+
+      <!-- サービスの部分 -->
+      <section id="service" class="py-5">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4 text-center  mb-4">
+                    <i class="fa-solid fa-people-line fa-3x mb-2"></i>
+                      <h3>個人ガイドツアー</h3>
+                      <p>東京は世界でも有数の都市です。誰もが楽しめる、さまざまでエキサイティングな体験の寄せ集めです。ユニークで珍しいものに参加可能です</p>
+                  </div>
+                  <div class="col-md-4 text-center mb-4">
+                    <i class="fa-solid fa-camera-retro fa-3x mb-2"></i>
+
+                    <h3>フォトセッション</h3>
+                    <p>東京でモデルのように写真を取りましょう！ポーズをとる方法をご案内し、カメラの前にいることに安心して、お過ごしいただけるようにします。</p>
+                  </div>
+                  <div class="col-md-4 text-center mb-4">
+                    <i class="fa-solid fa-photo-film  fa-3x mb-2"></i>  
+                    <h3>写真編集</h3>
+                    <p>一人当たり少なくとも40枚のHD写真を送ります。すべての写真を編集され、ダウンロードできるようになりました。</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+ 
+   <!--私について -->
+    <section id="about" class="p-5">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container pt-5">
+                        <h1>私について</h1>
+                        <p>こんにちは　Reikaと申します。私の写真撮影への情熱に専念して、人生を送っている普通の女性です。自然、風景の写真を撮影するのが大好きです。この体験を通じて、新しい面白い人たちと出会えることを楽しみにしています。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- 私の作品 -->
+    <section id="gallary" class="p-5">
+        <div class="container">
+            <h1 class="text-center">私の作品</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, doloremque?</p>
+            <!-- Image -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2022/05/03/23/35/rapeseed-7172836_960_720.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2022/05/16/02/04/women-7199308_960_720.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2014/12/16/22/25/woman-570883_960_720.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_960_720.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2013/04/03/12/05/tree-99852_960_720.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2022/05/11/10/08/foodie-7189027_960_720.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2022/05/06/17/54/beach-7178838_960_720.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2016/07/10/17/54/kid-1508121_960_720.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- フッター   -->
+    <footer class="text-center p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy; Napatsara Official 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">お問い合わせ</h5>
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label>メール</label>
+                            <input type="email" placeholder="nigawa@gmail.com" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>依頼内容</label>
+                            <input type="text" placeholder="依頼したい内容を入力してください。" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>詳細</label>
+                            <textarea id="" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">キャンセル</button>
+                    <button class="btn btn-success">送信</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

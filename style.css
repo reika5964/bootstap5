@@ -1,0 +1,63 @@
+*{font-family: 'Zen Old Mincho', serif;}
+.carousel-item{
+    height: 500px;
+ 
+}
+.carousel-image-1{
+    background-image: url("img/hokkaido.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-image-2{
+    background-image: url("img/ibaragi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.carousel-image-3{
+    background-image: url("img/tokyotower.jpg");
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+@media(min-width:600px) {
+    .carousel-item{
+        height: 500px;
+    }
+    .carousel-image-1{
+        background-image: url("img/hokkaido.jpg");
+        background-size: cover;
+        background-position:20% 30%;
+    }
+    .carousel-image-2{
+        background-image: url("img/ibaragi.jpg");
+        background-size: cover;
+        background-position:50% 78%;
+    }
+    .carousel-image-3{
+        background-image: url("img/tokyotower.jpg");
+        background-size: cover;
+        background-position: 0%;
+
+    
+    }
+}
+
+#about{
+    min-height: 300px;
+    position: relative;
+    background-image: url(img/iceland-5586225_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0,0, 0.7);
+    width: 100%;
+    height: 100%;
+}
